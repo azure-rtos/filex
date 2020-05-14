@@ -6,6 +6,10 @@ This is a high-performance, file allocation table (FAT)-compatible file system t
 
 Documentation for this library can be found here: http://docs.microsoft.com/azure/rtos/filex
 
+## exFAT Licensing
+
+FileX supports the Microsoft exFAT file system format. Your use of exFAT technology in your products requires a separate license from Microsoft. Please see the following link for further details on exFAT licensing: https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/exfat-licensing.aspx
+
 # Understanding inter-component dependencies
 
 The main components of Azure RTOS are each provided in their own repository, but there are dependencies between them--shown in the following graph--that are important to understand when setting up your builds.
