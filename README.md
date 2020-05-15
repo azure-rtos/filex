@@ -8,7 +8,9 @@ Documentation for this library can be found here: http://docs.microsoft.com/azur
 
 ## exFAT Licensing
 
-FileX supports the Microsoft exFAT file system format. Your use of exFAT technology in your products requires a separate license from Microsoft. Please see the following link for further details on exFAT licensing: https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/exfat-licensing.aspx
+FileX supports the Microsoft exFAT file system format using the FX_ENABLE_EXFAT define. See [common/inc/fx_user_sample.h](common/inc/fx_user_sample.h) for more information about configuration of FileX.
+
+Your use of exFAT technology in your products requires a separate license from Microsoft. Please see the following link for further details on exFAT licensing: https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/exfat-licensing.aspx
 
 # Understanding inter-component dependencies
 
