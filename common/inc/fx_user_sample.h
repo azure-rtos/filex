@@ -102,12 +102,6 @@
 /*#define FX_NO_TIMER  */
 
 
-/* Defined, FileX is running in a single-threaded environment and does not need thread
-   protection.  */
-
-/*#define FX_SINGLE_THREAD   */
-
-
 /* Defined, FileX does not update already opened files.  */
 
 /*#define FX_DONT_UPDATE_OPEN_FILES   */
@@ -143,9 +137,24 @@
 /*#define FX_NO_LOCAL_PATH   */
 
 
-/* Defined, FileX is able to access exFAT file system. */
+/* Defined, FileX is able to access exFAT file system. 
 
-/* #define FX_ENABLE_EXFAT   */
+   FileX supports the Microsoft exFAT file system format. 
+   Your use of exFAT technology in your products requires a separate 
+   license from Microsoft. Please see the following link for further 
+   details on exFAT licensing:
+
+   https://www.microsoft.com/en-us/legal/intellectualproperty/mtl/exfat-licensing.aspx
+*/
+
+/* #define FX_ENABLE_EXFAT */
+
+/* Define FileX internal protection macros.  If FX_SINGLE_THREAD is defined,
+   these protection macros are effectively disabled.  However, for multi-thread
+   uses, the macros are setup to utilize a ThreadX mutex for multiple thread 
+   access control into an open media.  */
+
+/* #define FX_SINGLE_THREAD   */
 
 
 /* Defined, data sector write requests are flushed immediately to the driver.  */
