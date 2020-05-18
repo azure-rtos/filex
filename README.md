@@ -80,6 +80,9 @@ Each official release (preview or GA) will be tagged to mark the commit and push
     - src
 - samples
 ```
+# Security
+
+Azure RTOS provides OEMs with components to secure communication and to create code and data isolation using underlying MCU/MPU hardware protection mechanisms. It is ultimately the responsibility of the device builder to ensure the device fully meets the evolving security requirements associated with its specific use case.
 
 # Contribution, feedback and issues
 
