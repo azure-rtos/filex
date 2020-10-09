@@ -26,7 +26,7 @@
 /*  PORT SPECIFIC C INFORMATION                            RELEASE        */ 
 /*                                                                        */ 
 /*    fx_port.h                                         Cortex-M3/GNU     */ 
-/*                                                           6.0          */
+/*                                                           6.1          */
 /*                                                                        */
 /*  AUTHOR                                                                */
 /*                                                                        */
@@ -45,6 +45,8 @@
 /*    DATE              NAME                      DESCRIPTION             */
 /*                                                                        */
 /*  05-19-2020     William E. Lamie         Initial Version 6.0           */
+/*  09-30-2020     William E. Lamie         Modified comment(s),          */
+/*                                            resulting in version 6.1    */
 /*                                                                        */
 /**************************************************************************/
 
@@ -156,7 +158,7 @@ typedef unsigned long long  ULONG64;
 
 #ifdef FX_SYSTEM_INIT
 CHAR                            _fx_version_id[] = 
-                                    "Copyright (c) Microsoft Corporation. All rights reserved.  *  FileX Cortex-M3/GNU Version 6.0 *";
+                                    "Copyright (c) Microsoft Corporation. All rights reserved.  *  FileX Cortex-M3/GNU Version 6.1 *";
 #else
 extern  CHAR                    _fx_version_id[];
 #endif
