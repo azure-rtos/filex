@@ -26,7 +26,7 @@
 /*  PORT SPECIFIC C INFORMATION                            RELEASE        */ 
 /*                                                                        */ 
 /*    fx_port.h                                           Linux/GCC       */ 
-/*                                                           6.1.8        */
+/*                                                           6.x          */
 /*                                                                        */
 /*  AUTHOR                                                                */
 /*                                                                        */
@@ -50,6 +50,9 @@
 /*                                            resulting in version 6.1.5  */
 /*  08-02-2021     William E. Lamie         Modified comment(s),          */
 /*                                            resulting in version 6.1.8  */
+/*  xx-xx-xxxx     Xiuwen Cai               Modified comment(s),          */
+/*                                            added basic types guards,   */
+/*                                            resulting in version 6.x    */
 /*                                                                        */
 /**************************************************************************/
 
@@ -83,6 +86,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#ifndef VOID
 #define VOID                                    void
 typedef char                                    CHAR;
 typedef char                                    BOOL;
@@ -93,6 +97,7 @@ typedef long                                    LONG;
 typedef unsigned long                           ULONG;
 typedef short                                   SHORT;
 typedef unsigned short                          USHORT;
+#endif
 
 #ifndef ULONG64_DEFINED
 #define ULONG64_DEFINED
