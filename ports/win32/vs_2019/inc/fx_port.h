@@ -26,7 +26,7 @@
 /*  PORT SPECIFIC C INFORMATION                            RELEASE        */ 
 /*                                                                        */ 
 /*    fx_port.h                                          Win32/Visual     */ 
-/*                                                           6.x          */
+/*                                                           6.3.0        */
 /*                                                                        */
 /*  AUTHOR                                                                */
 /*                                                                        */
@@ -50,9 +50,9 @@
 /*                                            resulting in version 6.1.5  */
 /*  08-02-2021     William E. Lamie         Modified comment(s),          */
 /*                                            resulting in version 6.1.8  */
-/*  xx-xx-xxxx     Xiuwen Cai               Modified comment(s),          */
+/*  10-31-2023     Xiuwen Cai               Modified comment(s),          */
 /*                                            added basic types guards,   */
-/*                                            resulting in version 6.x    */
+/*                                            resulting in version 6.3.0  */
 /*                                                                        */
 /**************************************************************************/
 
@@ -210,7 +210,7 @@ typedef unsigned long long                      ULONG64;
 
 #ifdef FX_SYSTEM_INIT
 CHAR                            _fx_version_id[] = 
-                                    "Copyright (c) Microsoft Corporation. All rights reserved.  *  FileX Win32/Version 6.2.1 *";
+                                    "Copyright (c) Microsoft Corporation. All rights reserved.  *  FileX Win32/Version 6.3.0 *";
 #else
 extern  CHAR                    _fx_version_id[];
 #endif
